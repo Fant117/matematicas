@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>titulo de la paguina de explicacion</title>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+    <script src="js/main.js" language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/stylesp.css">
+    <script type="text/javascript">
+ var res=new Array;
+        var no=new Array;
+        var tures=new Array;
+        var explicares=new Array;
+        var calif=0;
+        
+        res[1]="b";
+        res[2]="b";
+        res[3]="c";
+        res[4]="a";
+        res[5]="b";
+        res[6]="c";
+        res[7]="b";
+        res[8]="a";
+        
+        explicares[1]=" malo,la respuesta correcta es b";
+        explicares[2]=" malo,la respuesta correcta es b";
+        explicares[3]=" malo,la respuesta correcta es c";
+        explicares[4]=" malo,la respuesta correcta es a";
+        explicares[5]=" malo,la respuesta correcta es b";
+        explicares[6]=" malo,la respuesta correcta es c";
+        explicares[7]=" malo,la respuesta correcta es b";
+        explicares[8]=" malo,la respuesta correcta es a";
+        
+        function Engine(question, answer){
+            tures[question]=answer;
+        }
+        
+        function Score(){
+            var answertext=" RESULTADOS\n";
+            calif=0;
+            for(i=1;i<=8;i++){
+                answertext=answertext+" \nPregunta"+i+":";
+                if(res[i]!=tures[i]){
+                    answertext=answertext+explicares[i]+"\n";
+                }
+                else{
+                    answertext=answertext+" bien\n";
+                    calif++; }}
+                answertext=answertext+"\nCalificacion:"+calif;
+            
+                answertext=answertext+"\nDianostico:";
+                if(calif>=0){
+                    answertext=answertext+" malo";
+                }
+                if(calif>=1 &&calif<=2){
+                    answertext=answertext+" regular";
+                }
+                if(calif>=3 &&calif<=4){
+                    answertext=answertext+" bueno";
+                }
+                if(calif>=5 &&calif<=6){
+                    answertext=answertext+" bueno";
+                }
+                if(calif>=7 &&calif<=8){
+                    answertext=answertext+" exelente";
+                }
+                
+                alert(answertext);
+            
+        }
+            
+        
+        
+        
+</script>
+</head>
+<body>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="contenido">
+        <div class="header">
+            <div class="imagen">
+                <img src="img/pandasolo.png" width="100%" height="100%">
+            </div>
+            <div class="texto">
+                <p>FOCUS ON</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="secciones">
+
+        <article id="tab1">
+            <section class="explicaciondt">
+                <h1>Examen parcial x</h1>
+                <h6>Ecuación con incógnitas.</h6>
+
+                <form action="#" method="POST">
+<!--------------------------------------------------------------------------------------------------------------------->
+
+                     <p class="pregunta">3(2x+5)-2(4+4x)=7</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" value="a" onclick="Engine(1,this. value)"/>
+                        <span>a) x=1</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" value="b" onclick="Engine(1,this. value)"/>
+                        <span>b) x=0</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" value="c" onclick="Engine(1,this. value)"/>
+                        <span>c) x=3</span>
+                          <p></p>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+
+                    <p class="pregunta">La expresión 2x + 3 = 5 la letra x es un coeficiente.</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group2" type="radio" value="a" onclick="Engine(2,this. value)"/>
+                        <span>a) Verdadero</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group2" type="radio" value="b" onclick="Engine(2,this. value)"/>
+                        <span>b) Falso</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group2" type="radio" value="c" onclick="Engine(2,this. value)"/>
+                        <span>c) No lo se</span>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+                    
+                    
+                    
+                    <p class="pregunta">(47+x)= 3(x+11)</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group3" type="radio" value="a" onclick="Engine(3,this. value)"/>
+                        <span>a) x=4</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group3" type="radio" value="b" onclick="Engine(3,this. value)"/>
+                        <span>b) x=6</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group3" type="radio" value="c" onclick="Engine(3,this. value)" />
+                        <span>c) x=7</span>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+                            <p class="pregunta">1+x=3+1</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group4" type="radio" value="a" onclick="Engine(4,this. value)"/>
+                        <span>x=3</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group4" type="radio" value="b" onclick="Engine(4,this. value)"/>
+                        <span>b) x=2</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group4" type="radio" value="c" onclick="Engine(4,this. value)"  />
+                        <span>c) x=5</span>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+                </form>
+            </section>
+        </article>
+
+        <article id="tab2">
+            <section class="explicaciondt">
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+             <h1>Examen parcial x</h1>
+                <h6>Ecuación con incógnitas.</h6>
+
+                <form action="#" method="POST">
+<!--------------------------------------------------------------------------------------------------------------------->
+
+                     <p class="pregunta">−2+5=6−x−2</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" value="a" onclick="Engine(5,this. value)"/>
+                        <span>a) x=2</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" value="b" onclick="Engine(5,this. value)"/>
+                        <span>b) x=1</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" value="c" onclick="Engine(5,this. value)"/>
+                        <span>c) x=9</span>
+                          <p></p>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+
+                    <p class="pregunta">2x+4+3x−1=7x−2−x</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group2" type="radio"value="a" onclick="Engine(6,this. value)"/>
+                        <span>a) x=4</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group2" type="radio" value="b" onclick="Engine(6,this. value)"/>
+                        <span>b) x=6</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group2" type="radio" value="c" onclick="Engine(6,this. value)"/>
+                        <span>c) x=5</span>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+                    
+                    
+                    
+                    <p class="pregunta">2−5x=17</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group3" type="radio" value="a" onclick="Engine(7,this. value)"/>
+                        <span>a) x=4</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group3" type="radio" value="b" onclick="Engine(7,this. value)"/>
+                        <span>b) x=-3</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group3" type="radio" value="c" onclick="Engine(7,this. value)"/>
+                        <span>c) x-2</span>
+                      </label>
+                    </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+                            <p class="pregunta">8+4=4x</p>
+                    <div class="radio">
+                      <label>
+                        <input class="with-gap" name="group4" type="radio"value="a" onclick="Engine(8,this. value)"/>
+                        <span>a) x=1</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group4" type="radio" value="b" onclick="Engine(8,this. value)"/>
+                        <span>b) x=9</span>
+                      </label>
+
+                      <label>
+                        <input class="with-gap" name="group4" type="radio" value="c" onclick="Engine(8,this. value)"/>
+                        <span>c) x=6</span>
+                      </label>
+                    </div>    
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="boton left-75">
+                <input type="submit" name="RESULTADOS" value="Listo" onclick="Score()" class="btn">
+            </div>
+                
+                
+                
+                
+                </form>
+            </section>
+        </article>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="wrapp">
+            <ul class="tabss">
+                <li><a href="#tab1"><span class="tab-text"></span></a></li>
+                <li><a href="#tab2"><span class="tab-text"></span></a></li>
+                <!--<li><a href="#tab1"><span class="tab-text"></span></a></li>-->
+                <!--<li><a href="#tab2"><span class="tab-text"></span></a></li>-->
+            </ul>
+        </div>
+
+
+    <script src="js/materialize.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.modal');
+          var instances = M.Modal.init(elems);
+        });
+    </script>
+</body>
+</html>

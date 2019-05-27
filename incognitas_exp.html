@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>titulo de la paguina de explicacion</title>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+    <script src="js/main.js" language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/stylesp.css">
+</head>
+<body>
+
+
+
+
+    <div class="contenido">
+        <div class="header">
+            <div class="imagen">
+                <img src="img/pandasolo.png" width="100%" height="100%">
+            </div>
+            <div class="texto">
+                <p>FOCUS ON</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="secciones">
+
+        <article id="tab1">
+            <section class="explicaciondt">
+
+                <h1>Ecuaciones lineales </h1>
+                <h6>Con una incógnita</h6>
+
+                <p class="parrafo">Estas ecuaciones son un caso especial de igualdad entre expresiones algebraicas y pueden ser de mayor o menor complejidad. Eso sí: siempre estamos hablando de una sola incógnita que no está elevada a ninguna potencia. Un ejemplo de este tipo de ecuaciones podría ser el siguiente:
+                </p>
+                 <p> En este caso, está claro, la incógnita es la x y resolver la ecuación es precisamente hallar cuál es el valor de x que satisface la misma. El método para resolverla lo hemos comentado en el post anterior, que  te invitamos a releer. Hoy aplicaremos un método alternativo, consecuencia del anterior que puede resumirse en los pasos siguientes:</p>
+       <p>1.-Trabaja paréntesis (si los hay) realizando operaciones para eliminarlos. Factorizar siempre ayuda.</p>
+       <p>2.-Trabaja denominadores  (si los hay) para eliminarlos </p>
+       <p>3.-Realiza transposición de términos entre los dos miembros de la igualdad, tratando de que los términos en x queden en el primer término y los términos sin x queden en el segundo. La transposición de términos debe hacerse de tal modo que cada término quede en el nuevo miembro, formando parte de la operación inversa u opuesta en relación a cómo estaba antes. Esto es: si un término está sumando, pasa restando para el otro lado; si un término está dividiendo a todo el primer miembro, pasa multiplicando a todo el segundo miembro (habrá que poner paréntesis y luego aplicar propiedad distributiva)</p>
+         <p>4.-Asociando términos en x entre ellos y términos sin x entre ellos. </p>
+         <p>5.-Despeja x en el primer miembro de modo de llegar a una expresión del tipo X = un número. </p>
+         <p>Ejemplo de resolución de la ecuación anterior. </p>
+         <p> 5 x – 7  = 3 x + 11 </p>
+         <p>5 x – 3 x = + 11 + 7 </p>
+         <p>(observa que 3x pasó restando y -7 pasó sumando) </p>
+         <p>2x = 18 </p>
+         <p> x = 18 /2 </p>
+         <p>(observa que el 2 estaba multiplicando a la x y pasa dividiendo al 18) </p>
+         <p>x = 9 </p>
+         <p>¿Cómo saber si el resultado es correcto? Este es un paso clave al resolver ecuaciones lineales con una incógnita: hay que verificar el resultado y ello consiste en sustituir ese resultado (en este caso el 9) en cada lugar donde figure la x en la ecuación original. Si el resultado es correcto, al operar se llegará a una igualdad. </p>
+         <p>Veamos cómo hacerlo: </p>
+    <p>5 x – 7  = 3 x + 11 </p>
+    <p>5 (9) – 7 = 3 (9) + 11 </p>
+     <p>45 – 7 = 27 + 11 </p>   
+     <p>38 = 38 </p>
+<!-----------------------imagenes----------------------------------->           
+                <div class="espimg">
+
+                    <div class="tarjeta grande derecha">
+                        <div class="img">
+                            <img src="img/icoo.png">
+                        </div>
+                        <div class="detalles">
+                            <p>Quitar paréntesis (si los hubiese)
+Quitar denominadores (si los hubiese)
+Trasposición de términos: colocar los términos con incógnita en un miembro y los que no tienen incógnita en el otro miembro (para ello usamos la Regla de la suma)</p>
+                        </div>
+                    </div>
+
+                    <div class="imagen-n grande centrado">
+                        <img src="img/algebra-s1.jpg">
+                    </div>
+
+                    <div class="tarjeta grande izquierda">
+                        <div class="img">
+                            <img src="img/icon.jpg">
+                        </div>
+                        <div class="detalles">
+                            <p>Agrupar términos: Sumamos en cada miembro los términos semejantes (ver Suma de monomios)
+Despejar la incógnita: para ello usamos la Regla del producto
+simplificar el resultado: en la mayoría de ocasiones deberemos simplificar la fracción resultante.</p>
+                        </div>
+                    </div>
+
+                </div>
+<!---------------------------------------------------------->
+
+
+  <p class="parrafo">En matemáticas, como ocurre en otras asignaturas, hay que ser capaz de entender el sentido que tienen los términos que utilizamos.</p>
+            
+
+
+                <div class="boton">
+                    <button class="btn modal-trigger" data-target="ventana2">Ver video</button>
+                </div>
+                    
+
+                <div id="ventana2" class="modal">
+                        <div class="modal-content">
+                                <iframe width="100%" height="315" 
+                                src="https://youtu.be/IHblqjW8RY8" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+               
+                        </div>
+                    </div>
+                            <div class="boton left-75">
+                   <a href="incognitas_exa.html" class="btn_link"> Examen </a>   
+
+            </div>
+            </section>
+        </article>
+
+       
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/materialize.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.modal');
+          var instances = M.Modal.init(elems);
+        });
+    </script>
+</body>
+</html>
